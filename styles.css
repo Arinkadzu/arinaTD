@@ -115,8 +115,8 @@ body {
 }
 
 .main {
-  margin: 5em 0;
-  margin-bottom: 5em;
+  margin: 2em 0;
+  /* margin-bottom: 5em; */
 
   .main__section--welcome {
     position: relative;
@@ -387,7 +387,6 @@ body {
 .carusel-image,
 .main__section__image--square {
   width: 15em;
-  /* height:20em; */
   object-fit: cover;
 }
 
