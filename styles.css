@@ -38,15 +38,38 @@ body {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 300px) {
+  body {
+    font-size: 16px !important;
+
+  }
+.main__section__content{
+  .paragraph__wrapper--note {
+    width: 100% !important;
+  }
+
+  .header__title{
+    font-size: 16px !important;
+  }
+}
+  
+}
+
+@media only screen and (min-width: 301px) and (max-width: 768px){
   body {
     font-size: 20px !important;
-
+ padding: 0 0.02em!important;
+ margin: 0 0.02em!important;
   }
 
   .paragraph__wrapper--note {
     width: 100% !important;
   }
+
+  .paragraph__wrapper--note {
+    width: 100% !important;
+  }
+  
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -71,6 +94,10 @@ body {
   width: 100%;
   align-items: center;
   background: linear-gradient(to bottom right, var(--color8), var(--color9));
+
+  .header-brand-icon{
+    width: 20%;
+  }
 }
 
 .header__title {
@@ -155,7 +182,7 @@ body {
       }
 
       .main__section__title {
-        white-space: nowrap;
+        /* white-space: nowrap; */
         font-size: 3rem;
         background: linear-gradient(to bottom right, var(--color5), var(--color9));
         -webkit-background-clip: text;
@@ -201,14 +228,15 @@ body {
 
 .button--regular {
   font-weight: 600 !important;
-  background-color: var(--color5);
+  background-color: var(--color5) !important;
   color: var(--color4);
-  height: 2em;
-  width: 8em;
+  height: 4em;
+  width: 12em;
   align-items: center;
 
   span {
     padding-left: 0.5em;
+    font-size: 2rem;
   }
 
   a {
@@ -390,6 +418,7 @@ body {
   color: var(--color4) !important;
 
   .main__section__title {
+    color: var(--color4) !important;
     font-size: 6rem !important;
 
   }
@@ -422,4 +451,16 @@ body {
   img {
     height: 3em !important;
   }
+}
+
+.paragraph + .container{
+  padding-top: 2em;
+}
+
+.last-word{
+  padding-top: 1em;
+  font-size: 4rem;
+  color: var(--color3);
+  font-weight: 900;
+  text-align: center;
 }

@@ -33,43 +33,39 @@
   <header class="header d-flex navbar-hide-on-scroll">
 
     <nav class="navbar navbar-light">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" type="button" id="dropdownMenuButton"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img class="toggler-light" src="images/stars-light.svg" alt="Star">
-          <img class="toggler-dark" src="images/stars-dark.svg" alt="Star">
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#section1"><img class="star star--small star--dark" src="images/star-dark.svg"
-              alt="Star element">Known past</a>
-          <a class="dropdown-item" href="#section2"><img class="star star--small star--dark" src="images/star-dark.svg"
-              alt="Star element">First step</a>
-          <a class="dropdown-item" href="#section3"><img class="star star--small star--dark" src="images/star-dark.svg"
-              alt="Star element">A New beginning</a>
-          <a class="dropdown-item" href="#section4"><img class="star star--small star--dark" src="images/star-dark.svg"
-              alt="Star element">Learned Programs</a>
-          <a class="dropdown-item" href="#section5"><img class="star star--small star--dark" src="images/star-dark.svg"
-              alt="Star element">What University gives</a>
-          <a class="dropdown-item" href="#section6"><img class="star star--small star--dark" src="images/star-dark.svg"
-              alt="Star element">Finding Your Passion</a>
-          <a class="dropdown-item" href="#section7"><img class="star star--small star--dark" src="images/star-dark.svg"
-              alt="Star element">A Spark of Creativity</a>
+<div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="toggler-light" src="images/stars-light.svg" alt="Star">
+            <img class="toggler-dark" src="images/stars-dark.svg" alt="Star">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#section1"><img class="star star--small star--dark"
+                src="images/star-dark.svg" alt="Star element">Known past</a>
+            <a class="dropdown-item" href="#section2"><img class="star star--small star--dark"
+                src="images/star-dark.svg" alt="Star element">First step</a>
+            <a class="dropdown-item" href="#section3"><img class="star star--small star--dark"
+                src="images/star-dark.svg" alt="Star element">A New beginning</a>
+            <a class="dropdown-item" href="#section4"><img class="star star--small star--dark"
+                src="images/star-dark.svg" alt="Star element">Learned Programs</a>
+            <a class="dropdown-item" href="#section5"><img class="star star--small star--dark"
+                src="images/star-dark.svg" alt="Star element">What University gives</a>
+            <a class="dropdown-item" href="#section6"><img class="star star--small star--dark"
+                src="images/star-dark.svg" alt="Star element">Finding Your Passion</a>
+            <a class="dropdown-item" href="#section7"><img class="star star--small star--dark"
+                src="images/star-dark.svg" alt="Star element">A Spark of Creativity</a>
 
+          </div>
         </div>
-      </div>
       <a class="navbar-brand d-flex" href="#">
-        <img src="images/star.svg" alt="Star">
+        
+        <div class="d-flex align-items-center">
+          <img clas="header-brand-icon" src="images/star.svg" alt="Star">
         <span class="header__title">My Path to latvian university</span>
-        <span class="current-section"><span>
+        </div>
+        
       </a>
     </nav>
-
-    <!-- <label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider"></span>
-          <img class="slider" src="images/star-dark.svg">
-          <img class="slider" src="images/star-light.svg">
-        </label><br><br> -->
 
     <button class="toggle-btn ml-auto">
       <img class="toggler-light" src="images/star-dark.svg">
@@ -146,32 +142,36 @@
         </div>
         <div class="main__section__content">
           <div class="paragraph--with-images">
-            <div class="paragraph-wrapper d-flex">
+            <div class="paragraph-wrapper row">
               <div class="image-wrapper--square d-flex flex-column">
                 <img class="main__section__image--square" src="images/cigarette.svg">
                 <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
               </div>
-              <div class="paragraph">
+              <div class="paragraph col">
                 As I entered high school, the question of career aspirations arose. Graphic design seemed the natural
                 path,
                 and I envisioned myself crafting logos and websites that would enhance the digital world.</div>
             </div>
-            <div class="paragraph-wrapper d-flex">
+            <div class="paragraph-wrapper row d-flex">
               <div class="image-wrapper--square d-flex flex-column">
                 <img class="main__section__image--square" src="images/fox.svg">
                 <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
               </div>
-              <div class="paragraph">
-                While my artistic inclinations drew me initially to design fields, a deeper dive into UI/UX revealed the crucial role of program engineering principles in creating not just visually appealing interfaces but also ones that function seamlessly and cater to user needs. 
+              <div class="paragraph col">
+                While my artistic inclinations drew me initially to design fields, a deeper dive into UI/UX revealed the
+                crucial role of program engineering principles in creating not just visually appealing interfaces but
+                also ones that function seamlessly and cater to user needs. 
               </div>
             </div>
-            <div class="paragraph-wrapper d-flex">
+            <div class="paragraph-wrapper row d-flex">
               <div class="image-wrapper--square d-flex flex-column">
                 <img class="main__section__image--square" src="images/elf.svg">
                 <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
               </div>
-              <div class="paragraph">
-                Following this trajectory, I enrolled in the design program at Riga Technical University (RTU). While I thrived in the world of typography, color theory, and a little about UI/UX design fundamentals, a growing curiosity emerged – a desire to understand the "why" behind web design. 
+              <div class="paragraph col">
+                Following this trajectory, I enrolled in the design program at Riga Technical University (RTU). While I
+                thrived in the world of typography, color theory, and a little about UI/UX design fundamentals, a
+                growing curiosity emerged – a desire to understand the "why" behind web design.
               </div>
             </div>
           </div>
@@ -378,9 +378,9 @@
             landscapes
             to detailed characters, I honed my artistic skills (think: building the foundation for user journeys!). 
           </div>
-         
-          <div class="container">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          <div class="container" style="max-width: 250px;">
+            <div id="myCarousel" style="height: 200px; overflow: hidden;" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -389,17 +389,17 @@
               </ol>
 
               <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <img src="images/poster.svg" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-inner" >
+                <div class="item active" >
+                  <img style="height: 200px; overflow: hidden;" src="images/left.svg" alt="Circle of drawn woman fantastic head" style="width:100%;">
                 </div>
 
                 <div class="item">
-                  <img src="images/poster.svg" alt="Chicago" style="width:100%;">
+                  <img style="height: 200px; overflow: hidden;" src="images/center.svg" alt="Circle of drawn woman fantastic head" style="width:100%;">
                 </div>
 
                 <div class="item">
-                  <img src="images/poster.svg" alt="New york" style="width:100%;">
+                  <img style="height: 200px; overflow: hidden;" src="images/right.svg" alt="Circle of drawn woman fantastic head" style="width:100%;">
                 </div>
               </div>
 
@@ -414,7 +414,7 @@
               </a>
             </div>
           </div>
-          <div class="paragraph">
+          <div class="paragraph last-word">
             Curious to see more?
             Explore my artistic side on social media: 
           </div>
