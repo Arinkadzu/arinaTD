@@ -116,6 +116,7 @@ body {
 
 .main {
   margin: 2em 0;
+  
   /* margin-bottom: 5em; */
 
   .main__section--welcome {
@@ -142,6 +143,7 @@ body {
     }
 
     .main__section--welcome__wrapper {
+      
       width: 70%;
       padding: 0 5%;
       background-color: var(--color2--opacity30);
@@ -149,6 +151,7 @@ body {
       color: var(--color4);
 
       .main__section--welcome__title {
+        padding-top: 1em;
         font-size: 8rem;
         text-transform: uppercase;
       }
