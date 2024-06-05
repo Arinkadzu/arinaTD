@@ -1,5 +1,4 @@
 let darkMode = false;
-console.log('a');
 function switchToDarkMode(state){
     if(state){
     //switch to dark mode
@@ -10,26 +9,30 @@ function switchToDarkMode(state){
     }
 }
 
+function getCurrentSectionText() {
+    const currentHash = window.location.hash;
+
+    const sections = document.querySelectorAll('section[id]');
+
+    for (const section of sections) {
+        if (section.id === currentHash.slice(1)) { 
+        return section.textContent.trim();
+        }
+    }
+
+    // No matching section found, return an empty string
+    return "";
+}
+
 $(document).ready(function () {
 
     //Elements render
-    console.log($('.switch').val());
     $('.heading').html('<h4>Changed</h4>');
     $('.star--dark').attr('src', 'images/star-dark.svg');
     $('.star--light').attr('src', 'images/star-light.svg');
     $('.stars--light').attr('src', 'images/stars-light.svg');
     $('.stars--dark').attr('src', 'images/stars-dark.svg');
 
-    //Event liestenrs
-    // $('.switch input[type="checkbox"]').change(function() {
-    //     var isChecked = $(this).is(':checked');
-    //     if(!darkMode){
-    //         darkMode = true;
-    //     }else{
-    //         darkMode = false;
-    //     }
-    //     switchToDarkMode(darkMode);
-    // });
 
     $('.toggle-btn').on('click', function () {
         //var Status = $(this).val();
@@ -47,5 +50,10 @@ $(document).ready(function () {
 
     $('.dropdown-item__icon').html(`<img class="star star--small star--dark" src="images/star-dark.svg" alt="Star element">`);
     
+    const currentSectionSpan = document.querySelector('.current-section');
+    
+    if (currentSectionSpan) {
+    currentSectionSpan.textContent = getCurrentSectionText();
+    }
 
 });

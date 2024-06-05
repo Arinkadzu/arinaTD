@@ -19,38 +19,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+
   <title>My path</title>
 
 </head>
 
 <body class="main-container">
-  <header class="header d-flex">
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        <img src="images/stars-dark.svg" alt="Star">
-        <img src="images/stars-light.svg" alt="Star">
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#section1"><span class="dropdown-item__icon"></span>Known past</a>
-        <a class="dropdown-item" href="#section2"><span class="dropdown-item__icon"></span>First step</a>
-        <a class="dropdown-item" href="#section3"><span class="dropdown-item__icon"></span>A New beginning</a>
-        <a class="dropdown-item" href="#section4"><span class="dropdown-item__icon"></span>Learned Programs</a>
-        <a class="dropdown-item" href="#section5"><span class="dropdown-item__icon"></span>What University gives</a>
-        <a class="dropdown-item" href="#section6"><span class="dropdown-item__icon"></span>A Spark of Creativity</a>
 
-      </div>
-    </div>
+  <header class="header d-flex navbar-hide-on-scroll">
+
     <nav class="navbar navbar-light">
-      <a class="navbar-brand" href="#">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="toggler-light" src="images/stars-light.svg" alt="Star">
+          <img class="toggler-dark" src="images/stars-dark.svg" alt="Star">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#section1"><img class="star star--small star--dark" src="images/star-dark.svg"
+              alt="Star element">Known past</a>
+          <a class="dropdown-item" href="#section2"><img class="star star--small star--dark" src="images/star-dark.svg"
+              alt="Star element">First step</a>
+          <a class="dropdown-item" href="#section3"><img class="star star--small star--dark" src="images/star-dark.svg"
+              alt="Star element">A New beginning</a>
+          <a class="dropdown-item" href="#section4"><img class="star star--small star--dark" src="images/star-dark.svg"
+              alt="Star element">Learned Programs</a>
+          <a class="dropdown-item" href="#section5"><img class="star star--small star--dark" src="images/star-dark.svg"
+              alt="Star element">What University gives</a>
+          <a class="dropdown-item" href="#section6"><img class="star star--small star--dark" src="images/star-dark.svg"
+              alt="Star element">Finding Your Passion</a>
+          <a class="dropdown-item" href="#section7"><img class="star star--small star--dark" src="images/star-dark.svg"
+              alt="Star element">A Spark of Creativity</a>
 
+        </div>
+      </div>
+      <a class="navbar-brand d-flex" href="#">
         <img src="images/star.svg" alt="Star">
         <span class="header__title">My Path to latvian university</span>
+        <span class="current-section"><span>
       </a>
     </nav>
 
@@ -91,7 +101,7 @@
         </a>
       </div>
     </div>
-    <div id="#section1" class="main__section mt-5">
+    <div id="section1" class="main__section mt-5">
       <div class="d-flex flex-column main__section__wrapper">
         <div class="title main__section__title__wrapper d-flex">
           <img class="divider divider-dark toggler-light" src="images/divider-dark.svg">
@@ -122,7 +132,7 @@
       </div>
     </div>
 
-    <div id="#section2" class="main__section mt-3">
+    <div id="section2" class="main__section mt-3">
       <div class="d-flex flex-column main__section__wrapper">
         <div class="title main__section__title__wrapper d-flex">
           <img class="divider divider-dark toggler-light" src="images/divider-dark.svg">
@@ -135,52 +145,40 @@
 
         </div>
         <div class="main__section__content">
-          <div class="paragraph-wrapper d-flex">
-            <div class="image-wrapper d-flex flex-column">
-              <img class="main__section__image--square" src="images/koi.svg">
-              <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
+          <div class="paragraph--with-images">
+            <div class="paragraph-wrapper d-flex">
+              <div class="image-wrapper--square d-flex flex-column">
+                <img class="main__section__image--square" src="images/cigarette.svg">
+                <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
+              </div>
+              <div class="paragraph">
+                As I entered high school, the question of career aspirations arose. Graphic design seemed the natural
+                path,
+                and I envisioned myself crafting logos and websites that would enhance the digital world.</div>
             </div>
-            <div class="paragraph">
-              As I entered high school, the question of career aspirations arose. Graphic design seemed the natural
-              path,
-              and I envisioned myself crafting logos and websites that would enhance the digital world. </div>
-          </div>
-          <div class="paragraph-wrapper d-flex">
-            <div class="image-wrapper d-flex flex-column">
-              <img class="main__section__image--square" src="images/koi.svg">
-              <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
+            <div class="paragraph-wrapper d-flex">
+              <div class="image-wrapper--square d-flex flex-column">
+                <img class="main__section__image--square" src="images/fox.svg">
+                <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
+              </div>
+              <div class="paragraph">
+                While my artistic inclinations drew me initially to design fields, a deeper dive into UI/UX revealed the crucial role of program engineering principles in creating not just visually appealing interfaces but also ones that function seamlessly and cater to user needs. 
+              </div>
             </div>
-            <div class="paragraph">
-              As I entered high school, the question of career aspirations arose. Graphic design seemed the natural
-              path,
-              and I envisioned myself crafting logos and websites that would enhance the digital world. </div>
-          </div>
-          <div class="paragraph-wrapper d-flex">
-            <div class="image-wrapper d-flex flex-column">
-              <img class="main__section__image--square" src="images/koi.svg">
-              <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
-            </div>
-            <div class="paragraph">
-              As I entered high school, the question of career aspirations arose. Graphic design seemed the natural
-              path,
-              and I envisioned myself crafting logos and websites that would enhance the digital world. </div>
-          </div>
-          <div class="paragraph-wrapper d-flex">
-            <div class="title main__section__title__wrapper d-flex">
-              <div class="main__section__title">
-                The algorithms powering user interactions, the technical underpinnings of websites – these aspects began
-                to intrigue me more than just aesthetics.
-                <br>
-                I'm excited to share!
-                All the images you see here - were created by me.
+            <div class="paragraph-wrapper d-flex">
+              <div class="image-wrapper--square d-flex flex-column">
+                <img class="main__section__image--square" src="images/elf.svg">
+                <span class="copyright copyright--small">© Image was made by page author - Arina Fokina</span>
+              </div>
+              <div class="paragraph">
+                Following this trajectory, I enrolled in the design program at Riga Technical University (RTU). While I thrived in the world of typography, color theory, and a little about UI/UX design fundamentals, a growing curiosity emerged – a desire to understand the "why" behind web design. 
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-    <div id="#section3" class="main__section mt-5">
+    <div id="section3" class="main__section mt-5">
       <div class="d-flex flex-column main__section__wrapper">
         <div class="title main__section__title__wrapper d-flex">
           <img class="divider divider-dark toggler-light" src="images/divider-dark.svg">
@@ -208,7 +206,7 @@
         </div>
       </div>
     </div>
-    <div id="#section4" class="main__section mt-5">
+    <div id="section4" class="main__section mt-5">
       <div class="d-flex flex-column main__section__wrapper">
         <div class="title main__section__title__wrapper d-flex">
           <img class="divider divider-dark toggler-light" src="images/divider-dark.svg">
@@ -226,12 +224,13 @@
               class="main__section__title main__section__title__wrapper paragraph__title d-flex paragraph__title--point">
               <img class="point point-dark toggler-light" src="images/star-dark.svg">
               <img class="point point-light toggler-dark" src="images/star-light.svg">
-              <div class="main__section__title">
+              <div class="title main__section__title main__section__title--medium">
                 flexibility
               </div>
             </div>
             The University of Latvia offering the opportunity to study more than one program, and select between
-            Bachelor's and professional studies, provides the perfect environment for my evolving academic interests,
+            Bachelor's and professional studies, provides the perfect environment for my evolving academic
+            interests,
             given its emphasis on computer science and information technology.  
           </div>
         </div>
@@ -241,13 +240,15 @@
               class="main__section__title main__section__title__wrapper paragraph__title d-flex paragraph__title--point">
               <img class="point point-dark toggler-light" src="images/star-dark.svg">
               <img class="point point-light toggler-dark" src="images/star-light.svg">
-              <div class="main__section__title">
+              <div class="title main__section__title main__section__title--medium">
                 opportunity
               </div>
             </div>
-            Now, I can not only hone my creative design skills but also gain the technical expertise necessary to build
+            Now, I can not only hone my creative design skills but also gain the technical expertise necessary to
+            build
             user interfaces and comprehend their user interaction patterns. This combination empowers me to approach
-            UI/UX design from a holistic perspective, ensuring both aesthetic appeal and a user-centric functionality. 
+            UI/UX design from a holistic perspective, ensuring both aesthetic appeal and a user-centric
+            functionality. 
           </div>
         </div>
         <div class="main__section__content">
@@ -256,20 +257,23 @@
               class="main__section__title main__section__title__wrapper paragraph__title d-flex paragraph__title--point">
               <img class="point point-dark toggler-light" src="images/star-dark.svg">
               <img class="point point-light toggler-dark" src="images/star-light.svg">
-              <div class="main__section__title">
+              <div class="title main__section__title main__section__title--medium">
                 Future
               </div>
             </div>
-            My journey has been one of unexpected twists and exciting discoveries. Studying Program Engineering at LU
-            allows me to embrace both my creative sensibilities and my technical aptitude. In this dynamic environment,
-            I am confident that I can develop the skills and knowledge necessary to become a successful UI/UX designer,
+            My journey has been one of unexpected twists and exciting discoveries. Studying Program Engineering at
+            LU
+            allows me to embrace both my creative sensibilities and my technical aptitude. In this dynamic
+            environment,
+            I am confident that I can develop the skills and knowledge necessary to become a successful UI/UX
+            designer,
             crafting interfaces that are not just visually captivating but also technically sound and profoundly
             user-friendly. 
           </div>
         </div>
       </div>
     </div>
-    <div id="#section5" class="main__section mt-5">
+    <div id="section5" class="main__section mt-5">
       <div class="d-flex flex-column main__section__wrapper">
         <div class="title main__section__title__wrapper d-flex">
           <img class="divider divider-dark toggler-light" src="images/divider-dark.svg">
@@ -292,7 +296,8 @@
             <div class="paragraph__text">
               Languages like C# or JavaScript,<br>
               (Additionaly with HTML and CSS of course)<br><br>
-              have equipped me with the ability to understand the logic and structure behind building user interfaces. 
+              have equipped me with the ability to understand the logic and structure behind building user
+              interfaces. 
             </div>
           </div>
           <div class="paragraph__wrapper--note paragraph__wrapper--note--right ml-auto">
@@ -312,15 +317,17 @@
               into functional interfaces. 
             </div>
           </div>
-          <div class="paragraph mb-4">
-            The combination of knowledge gained at University and self-directed learning has created a solid foundation
+          <div class="paragraph my-5">
+            The combination of knowledge gained at University and self-directed learning has created a solid
+            foundation
             for me to navigate the world of UI/UX design. My ability to code, combined with a strong grasp of
-            user-centered design principles, allows me to approach interface creation from a well-rounded perspective. 
+            user-centered design principles, allows me to approach interface creation from a well-rounded
+            perspective. 
           </div>
         </div>
       </div>
     </div>
-    <div id="#section6" class="main__section mt-5">
+    <div id="section6" class="main__section mt-5">
       <div class="d-flex flex-column main__section__wrapper">
         <div class="title main__section__title__wrapper d-flex">
           <img class="divider divider-dark toggler-light" src="images/divider-dark.svg">
@@ -337,7 +344,8 @@
 
         <div class="main__section__content">
           <div class="paragraph">
-            My journey to UI/UX design has been an unexpected adventure, a blend of artistic expression and technical
+            My journey to UI/UX design has been an unexpected adventure, a blend of artistic expression and
+            technical
             problem-solving. It might not be your exact path, but it highlights the power of exploration.  
             <br><br>
             <span class="super-bold">Don't be afraid</span> 
@@ -347,7 +355,8 @@
             <br><br>
             Your perfect blend of skills and passions might be just around the corner, waiting to be discovered. 
             <br><br>
-            <span class="super-bold">So, explore, experiment, and keep searching for what ignites your spark! </span>
+            <span class="super-bold">So, explore, experiment, and keep searching for what ignites your spark!
+            </span>
             <br>
             You might surprise yourself with where you end up. 
             <span class="super-bold">the Engineering program at the University of Latvia.</span> 
@@ -356,21 +365,17 @@
         </div>
       </div>
     </div>
-    <div id="#section7" class="main__section mt-5">
-      <div class="d-flex flex-column main__section__wrapper">
+    <div id="section7" class="main__section main__section--last mt-5">
+      <div class="d-flex flex-column main__section__wrapper ">
         <div class="title main__section__title__wrapper d-flex">
-          <img class="divider divider-dark toggler-light" src="images/divider-dark.svg">
-          <img class="divider divider-dark toggler-dark" src="images/divider-light.svg">
           <div class="main__section__title">
             A Spark of Creativity
           </div>
-          <img class="divider divider-dark toggler-light rotate-180" src="images/divider-dark.svg">
-          <img class="divider divider-dark toggler-dark rotate-180" src="images/divider-light.svg">
-
         </div>
         <div class="main__section__content">
           <div class="paragraph">
-            Art has always been a passion, a space for exploration since my early school days. From vibrant landscapes
+            Art has always been a passion, a space for exploration since my early school days. From vibrant
+            landscapes
             to detailed characters, I honed my artistic skills (think: building the foundation for user journeys!). 
           </div>
           <div class="paragraph">
@@ -378,7 +383,6 @@
             Explore my artistic side on social media: 
           </div>
           <div class="container">
-            <h2>Carousel Example</h2>  
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -386,22 +390,22 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol>
-          
+
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="images/poster.svg">
+                  <img src="images/poster.svg" alt="Los Angeles" style="width:100%;">
                 </div>
-          
+
                 <div class="item">
-                  <img src="images/poster.svg">
+                  <img src="images/poster.svg" alt="Chicago" style="width:100%;">
                 </div>
-              
+
                 <div class="item">
-                  <img src="images/poster.svg" >
+                  <img src="images/poster.svg" alt="New york" style="width:100%;">
                 </div>
               </div>
-          
+
               <!-- Left and right controls -->
               <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -413,15 +417,27 @@
               </a>
             </div>
           </div>
-          <div class="links">
-            <a herf="">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          <div class="links d-flex flex-row justify-content-center">
+            <a herf="https://www.instagram.com/arinkadzu/">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
             </a>
-            <a herf="">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M2 377.4l43 74.3A51.4 51.4 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.4 51.4 0 0 0 290.2 32h-88.4l257.3 447.6 40.7-70.5c1.9-3.2 21-29.7 2-59.1zM275 304.5l-115.5-200L44 304.5z"/></svg>
+            <a herf="https://www.artstation.com/">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M2 377.4l43 74.3A51.4 51.4 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.4 51.4 0 0 0 290.2 32h-88.4l257.3 447.6 40.7-70.5c1.9-3.2 21-29.7 2-59.1zM275 304.5l-115.5-200L44 304.5z" />
+              </svg>
             </a>
-            <a herf="">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 93.2l-98.2 179.1 7.4 9.5H320v127.7H159.1l-13.5 9.2-43.7 84c-.3 0-8.6 8.6-9.2 9.2H0v-93.2l93.2-179.4-7.4-9.2H0V102.5h156l13.5-9.2 43.7-84c.3 0 8.6-8.6 9.2-9.2H320v93.1z"/></svg>
+            <a herf="https://www.deviantart.com/arinkadzu">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M320 93.2l-98.2 179.1 7.4 9.5H320v127.7H159.1l-13.5 9.2-43.7 84c-.3 0-8.6 8.6-9.2 9.2H0v-93.2l93.2-179.4-7.4-9.2H0V102.5h156l13.5-9.2 43.7-84c.3 0 8.6-8.6 9.2-9.2H320v93.1z" />
+              </svg>
             </a>
           </div>
         </div>
